@@ -1,3 +1,17 @@
+html {
+  box-sizing: initial;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
   background-color: salmon;
+  overflow-x: hidden;
 }
