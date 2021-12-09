@@ -28,6 +28,59 @@ h4 {
   font-weight: 500;
 }
 
+.black {
+  color: black !important;
+}
+
+.lightgray-text {
+  color: #f2f2f2 !important;
+}
+
+.darkgray-text {
+  color: #aaaaaa !important;
+}
+
+.red-text {
+  color: #e1251b !important;
+}
+
+.white-text {
+  color: white !important;
+}
+
+.disabled {
+  color: #e0e0e0;
+}
+
+.lightgray-bg {
+  background-color: #f2f2f2 !important;
+}
+
+.red-bg {
+  background-color: #ce0000 !important;
+}
+
+.red-button {
+  width: 90%;
+  max-width: 350px;
+  margin: 1rem auto;
+  padding: 0.375rem 0;
+  color: white;
+  font-weight: 500;
+  background-color: #ce0000;
+  border: none;
+  border-radius: 1rem;
+}
+
+.divider {
+  width: 90%;
+  max-width: 770px;
+  height: 1px;
+  margin: auto;
+  display: block;
+  background-color: black;
+}
+
 .register-section {
   width: 100%;
   height: 100%;
@@ -115,58 +168,6 @@ h4 {
   outline: 0;
 }
 
-.inicio-section nav {
-  padding: 1rem 0.5rem;
-}
-
-@media screen and (min-width: 64em) {
-  .inicio-section nav {
-    padding: 2rem 5rem;
-  }
-}
-
-.inicio-section nav div .logo {
-  width: 40%;
-  max-width: 250px;
-}
-
-.inicio-section nav div .user {
-  margin-left: auto;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  gap: 5px;
-  font-size: clamp(14px, 2vw, 18px);
-}
-
-.inicio-section nav div .user img {
-  width: 24px;
-  height: 24px;
-}
-
-.inicio-section nav div .user p {
-  color: #ce0000;
-  margin: 0;
-  padding: 0;
-}
-
-.inicio-section nav div button {
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.inicio-section nav div button span {
-  display: block;
-  width: 20px;
-  height: 2.5px;
-  background-color: black;
-  border-radius: 3px;
-}
-
-.inicio-section nav div button span:not(:last-child) {
-  margin-bottom: 4px;
-}
-
 .inicio-section .alert-msg {
   display: flex;
   flex-flow: column wrap;
@@ -197,6 +198,11 @@ h4 {
   display: flex;
   flex-flow: column;
   justify-content: center;
+}
+
+.inicio-section .saldo .right a {
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (min-width: 64em) {
@@ -262,44 +268,92 @@ h4 {
   border-radius: 1rem;
 }
 
-.black {
-  color: black !important;
+nav {
+  padding: 1rem 0;
 }
 
-.lightgray-text {
-  color: #f2f2f2 !important;
+@media screen and (min-width: 64em) {
+  nav {
+    padding: 2rem 5rem;
+  }
 }
 
-.lightgray-bg {
-  background-color: #f2f2f2 !important;
+nav .container-fluid .logo {
+  width: 40%;
+  max-width: 250px;
 }
 
-.red-button {
-  width: 90%;
-  max-width: 350px;
-  margin: 1rem auto;
-  padding: 0.375rem 0;
-  color: white;
-  font-weight: 500;
-  background-color: #ce0000;
-  border: none;
-  border-radius: 1rem;
+nav .container-fluid .user {
+  margin-left: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 5px;
+  font-size: clamp(14px, 2vw, 18px);
 }
 
-.red-text {
-  color: #e1251b;
+nav .container-fluid .user img {
+  width: 24px;
+  height: 24px;
 }
 
-.disabled {
-  color: #e0e0e0;
+nav .container-fluid .user p {
+  color: #ce0000;
+  margin: 0;
+  padding: 0;
 }
 
-.divider {
-  width: 90%;
-  max-width: 770px;
-  height: 1px;
-  margin: auto;
+nav .container-fluid button {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+nav .container-fluid button span {
   display: block;
+  width: 20px;
+  height: 2.5px;
   background-color: black;
+  border-radius: 3px;
+}
+
+nav .container-fluid button span:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+nav .profile-div {
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.compra-section form {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.compra-section form .compra-wrapper .cantidad-wrapper .amount {
+  display: block;
+  width: 50px;
+  padding: 0.375rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid black;
+  border-radius: 1rem;
+  appearance: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.compra-section form .compra-wrapper .cantidad-wrapper .amount:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #ce0000;
+  outline: 0;
 }
 /*# sourceMappingURL=style.css.map */

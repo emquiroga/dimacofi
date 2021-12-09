@@ -20,35 +20,68 @@
     <title>Dimacofi | Usuario</title>
   </head>
   <body>
-    <section class="inicio-section">
-      <nav class="navbar navbar-light">
-        <div class="container-fluid">
-          <img src="../assets/logo/contratos.png" alt="Logo" class="logo" />
-          <div class="user">
-            <img src="../assets/SVG/usuario.svg" alt="User" class="user-img" />
-            <p class="user-name">(Nombre User)</p>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <img src="../assets/SVG/burger-menu.svg" alt="" />
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a href="../index.html">Volver</a>
-              </li>
-          </div>
+    <nav class="navbar navbar-light">
+      <div class="container-fluid">
+        <img src="../assets/logo/contratos.png" alt="Logo" class="logo" />
+        <div class="user">
+          <img src="../assets/SVG/usuario.svg" alt="User" class="user-img" />
+          <p class="user-name">(Nombre User)</p>
         </div>
-      </nav>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="../assets/SVG/burger-menu.svg" alt="" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="profile-div red-bg white-text mt-3" role="alert">
+            PERFIL
+          </div>
+          <ul class="navbar-nav me-auto mb-2 mt-3 mb-lg-0">
+            <li class="nav-item mt-3">
+              <p>DATOS PERSONALES</p>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">Editar datos</li>
+                <li class="nav-item">Modificar contraseña</li>
+              </ul>
+            </li>
+            <div class="divider"></div>
+            <li class="nav-item mt-3">
+              <p>COMPRAS</p>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">Comprar firmas</li>
+                <li class="nav-item">Facturas</li>
+              </ul>
+            </li>
+            <div class="divider"></div>
+            <li class="nav-item mt-3">
+              <p>NOTIFICACIONES</p>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">Mensajes</li>
+              </ul>
+            </li>
+            <div class="divider"></div>
+            <li class="nav-item mt-3">
+              <p>MIS DOCUMENTOS</p>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">Estado de envíos</li>
+            </li>
+            <div class="divider"></div>
+            <li class="nav-item mt-3">
+              Cerrar Sesión
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="inicio-section">
       <div class="alert-msg lightgray-bg" role="alert">
-        <img src="../assets/SVG/icono_cuenta.svg" alt="Verificación exitosa">
+        <img src="../assets/SVG/icono_cuenta.svg" alt="Verificación exitosa" />
         <h5>¡Su cuenta ha sido verificada con éxito!</h5>
       </div>
       <div class="saldo mt-3">
@@ -60,7 +93,7 @@
           </p>
         </div>
         <div class="right">
-          <button class="red-button">Comprar saldo</button>
+          <button class="red-button"><a href="./compra.html">Comprar saldo</a></button>
         </div>
       </div>
       <div class="divider mb-3"></div>
@@ -73,7 +106,7 @@
               <figure>
                 <img src="../assets/SVG/1.svg" alt="Documentos únicos" />
                 <figcaption>Enviar a firmar</figcaption>
-                <p class="lightgray-text mt-3">Documentos Únicos</p>
+                <p class="darkgray-text mt-3">Documentos Únicos</p>
               </figure>
             </div>
             <div class="singledoc">
@@ -83,7 +116,7 @@
                   alt="Documentos únicos con plantilla"
                 />
                 <figcaption>Enviar a firmar</figcaption>
-                <p class="lightgray-text mt-3">
+                <p class="darkgray-text mt-3">
                   Documentos Únicos con plantilla
                 </p>
               </figure>
@@ -95,7 +128,7 @@
                   alt="Documentos Masivos con plantilla"
                 />
                 <figcaption>Enviar a firmar</figcaption>
-                <p class="lightgray-text mt-3">
+                <p class="darkgray-text mt-3">
                   Documentos Masivos con plantilla
                 </p>
               </figure>

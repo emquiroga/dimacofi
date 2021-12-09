@@ -1,12 +1,30 @@
+//FONT COLORS
 .black {
   color: black !important;
 }
 .lightgray-text {
   color: $lightGray !important;
 }
+.darkgray-text {
+  color: $darkGray !important;
+}
+.red-text {
+  color: $redFont !important;
+}
+.white-text {
+  color: white !important;
+}
+.disabled {
+  color: $disabled;
+}
+//BG COLORS
 .lightgray-bg {
   background-color: $lightGray !important;
 }
+.red-bg {
+  background-color: $redButton !important;
+}
+
 .red-button {
   width: 90%;
   max-width: 350px;
@@ -18,12 +36,7 @@
   border: none;
   border-radius: 1rem;
 }
-.red-text {
-  color: $redFont;
-}
-.disabled {
-  color: $disabled;
-}
+
 .divider {
   width: 90%;
   max-width: 770px;

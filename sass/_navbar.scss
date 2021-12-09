@@ -1,0 +1,49 @@
+nav {
+  padding: 1rem 0;
+  @media screen and (min-width: $large) {
+    padding: 2rem 5rem;
+  }
+  .container-fluid {
+    .logo {
+      width: 40%;
+      max-width: 250px;
+    }
+    .user {
+      margin-left: auto;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      gap: 5px;
+      font-size: $fontSmall;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+      p {
+        color: $redButton;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    button {
+      border: none !important;
+      box-shadow: none !important;
+      span {
+        display: block;
+        width: 20px;
+        height: 2.5px;
+        background-color: black;
+        border-radius: 3px;
+
+        &:not(:last-child) {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+  .profile-div {
+    color: white;
+    padding: 1rem 2rem;
+  }
+}
