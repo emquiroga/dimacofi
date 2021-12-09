@@ -1,0 +1,31 @@
+.black {
+  color: black !important;
+}
+.lightgray-text {
+  color: $lightGray !important;
+}
+.red-button {
+  width: 90%;
+  max-width: 350px;
+  margin: 1rem auto;
+  padding: 0.375rem 0;
+  color: white;
+  font-weight: 500;
+  background-color: $redButton;
+  border: none;
+  border-radius: 1rem;
+}
+.red-text {
+  color: $redFont;
+}
+.disabled {
+  color: $disabled;
+}
+.divider {
+  width: 90%;
+  max-width: 770px;
+  height: 1px;
+  margin: auto;
+  display: block;
+  background-color: black;
+}

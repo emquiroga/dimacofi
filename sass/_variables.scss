@@ -7,6 +7,7 @@ $register-bg: url("../assets/images/bg-1920px.jpg");
 $redFont: #e1251b;
 $redButton: #ce0000;
 $lightGray: #79797c;
+$disabled: #e0e0e0;
 
 //Breakpoints:
 $small: "30em";
@@ -15,3 +16,7 @@ $tablet: "48em";
 $large: "64em";
 $xlarge: "90em";
 $xxlarge: "120em";
+
+//Font sizes
+$fontSmall: clamp(14px, 2vw, 18px);
+$fontMedium: clamp(18px, 2vw, 24px);
