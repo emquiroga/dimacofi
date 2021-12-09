@@ -17,6 +17,17 @@ body {
   overflow-x: hidden;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  font-size: clamp(22px, 2vw, 30px);
+}
+
+h4 {
+  font-weight: 500;
+}
+
 .register-section {
   width: 100%;
   height: 100%;
@@ -92,7 +103,7 @@ body {
   background-color: #fff;
   background-clip: padding-box;
   border: none;
-  border-bottom: 1px solid #79797c;
+  border-bottom: 1px solid #f2f2f2;
   appearance: none;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -108,8 +119,14 @@ body {
   padding: 1rem 0.5rem;
 }
 
+@media screen and (min-width: 64em) {
+  .inicio-section nav {
+    padding: 2rem 5rem;
+  }
+}
+
 .inicio-section nav div .logo {
-  width: 30%;
+  width: 40%;
   max-width: 250px;
 }
 
@@ -119,6 +136,7 @@ body {
   flex-flow: row wrap;
   align-items: center;
   gap: 5px;
+  font-size: clamp(14px, 2vw, 18px);
 }
 
 .inicio-section nav div .user img {
@@ -147,6 +165,22 @@ body {
 
 .inicio-section nav div button span:not(:last-child) {
   margin-bottom: 4px;
+}
+
+.inicio-section .alert-msg {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 64em) {
+  .inicio-section .alert-msg {
+    padding: 1rem 0;
+    flex-flow: row wrap;
+    gap: 5rem;
+  }
 }
 
 .inicio-section .saldo {
@@ -233,7 +267,11 @@ body {
 }
 
 .lightgray-text {
-  color: #79797c !important;
+  color: #f2f2f2 !important;
+}
+
+.lightgray-bg {
+  background-color: #f2f2f2 !important;
 }
 
 .red-button {
