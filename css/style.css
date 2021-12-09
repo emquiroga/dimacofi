@@ -72,6 +72,17 @@ h4 {
   border-radius: 1rem;
 }
 
+.control-button {
+  width: 22px;
+  height: auto;
+  color: #e1251b;
+  font-weight: 700;
+  font-size: clamp(18px, 2vw, 24px);
+  background-color: transparent;
+  border: 2px solid #e1251b;
+  border-radius: 50%;
+}
+
 .divider {
   width: 90%;
   max-width: 770px;
@@ -325,13 +336,45 @@ nav .profile-div {
   padding: 1rem 2rem;
 }
 
+.compra-section {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
 .compra-section form {
   width: 90%;
+  max-width: 900px;
   margin: auto;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 64em) {
+  .compra-section form {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.compra-section form .compra-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.compra-section form .compra-wrapper .cantidad-wrapper {
+  padding: 2rem 0;
+}
+
+.compra-section form .compra-wrapper .cantidad-wrapper p {
+  font-size: clamp(14px, 2vw, 18px);
 }
 
 .compra-section form .compra-wrapper .cantidad-wrapper .amount {
@@ -344,7 +387,7 @@ nav .profile-div {
   color: #212529;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 1rem;
   appearance: none;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -355,5 +398,18 @@ nav .profile-div {
   background-color: #fff;
   border-color: #ce0000;
   outline: 0;
+}
+
+.compra-section form .compra-wrapper .total-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 64em) {
+  .compra-section form .divider {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

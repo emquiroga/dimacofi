@@ -1,14 +1,33 @@
 .compra-section {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   form {
     width: 90%;
+    max-width: 900px;
     margin: auto;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: $large) {
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
 
     .compra-wrapper {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
       .cantidad-wrapper {
+        padding: 2rem 0;
+        p {
+          font-size: $fontSmall;
+        }
         .amount {
           display: block;
           width: 50px;
@@ -19,7 +38,7 @@
           color: #212529;
           background-color: #fff;
           background-clip: padding-box;
-          border: 1px solid black;
+          border: 2px solid black;
           border-radius: 1rem;
           -webkit-appearance: none;
           -moz-appearance: none;
@@ -33,6 +52,17 @@
             outline: 0;
           }
         }
+      }
+      .total-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 2rem;
+        font-weight: 700;
+      }
+    }
+    .divider {
+      @media screen and (min-width: $large) {
+        display: none;
       }
     }
   }

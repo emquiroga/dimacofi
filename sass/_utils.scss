@@ -24,7 +24,7 @@
 .red-bg {
   background-color: $redButton !important;
 }
-
+//BUTTONS
 .red-button {
   width: 90%;
   max-width: 350px;
@@ -36,7 +36,16 @@
   border: none;
   border-radius: 1rem;
 }
-
+.control-button {
+  width: 22px;
+  height: auto;
+  color: $redFont;
+  font-weight: 700;
+  font-size: $fontMedium;
+  background-color: transparent;
+  border: 2px solid $redFont;
+  border-radius: 50%;
+}
 .divider {
   width: 90%;
   max-width: 770px;
