@@ -37,8 +37,12 @@
   border-radius: 1rem;
 }
 .control-button {
-  width: 22px;
+  width: 24px;
   height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   color: $redFont;
   font-weight: 700;
   font-size: $fontMedium;
@@ -46,6 +50,7 @@
   border: 2px solid $redFont;
   border-radius: 50%;
 }
+//Layout components
 .divider {
   width: 90%;
   max-width: 770px;
@@ -63,5 +68,16 @@
   background-color: $darkGray;
   @media screen and (min-width: $tablet) {
     margin: auto 0 auto 3rem;
+  }
+}
+//Helpers
+.hide {
+  display: none;
+}
+.active {
+  &:hover {
+    cursor: pointer;
+    border: 4px solid $redFont !important;
+    transition: all 150ms ease-in-out;
   }
 }
