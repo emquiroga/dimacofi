@@ -24,32 +24,6 @@
 .red-bg {
   background-color: $redButton !important;
 }
-//BUTTONS
-.red-button {
-  width: 90%;
-  max-width: 350px;
-  margin: 1rem auto;
-  padding: 0.375rem 0;
-  color: white;
-  font-weight: 500;
-  background-color: $redButton;
-  border: none;
-  border-radius: 1rem;
-}
-.control-button {
-  width: 24px;
-  height: auto;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  color: $redFont;
-  font-weight: 700;
-  font-size: $fontMedium;
-  background-color: transparent;
-  border: 2px solid $redFont;
-  border-radius: 50%;
-}
 //Layout components
 .divider {
   width: 90%;
@@ -90,3 +64,6 @@
     transition: all 150ms ease-in-out;
   }
 }
+//Alignment
+
+//Sizing

@@ -9,11 +9,14 @@
 
     label {
       width: 90%;
+      max-width: 560px;
       select {
         width: 100%;
         font-weight: 700;
         padding: 0.375rem 0.75rem;
+        border: 2px solid black;
         border-radius: 1rem;
+        cursor: pointer;
 
         &:focus {
           color: $redFont;
@@ -54,6 +57,7 @@
       img {
         width: 60%;
         height: auto;
+        cursor: pointer;
       }
     }
     p {
