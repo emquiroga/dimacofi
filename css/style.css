@@ -111,6 +111,16 @@ h4 {
   }
 }
 
+.dotted-divider {
+  width: 1px;
+  height: 170px;
+  margin: 0;
+  display: block;
+  color: #aaaaaa;
+  writing-mode: vertical-lr;
+  border-left: 3px dotted #aaaaaa;
+}
+
 .hide {
   display: none;
 }
@@ -491,31 +501,33 @@ nav .single-field p {
   }
 }
 
-.documento-1-section .progress-wrapper {
+.progress-wrapper {
+  max-width: 700px;
+  margin: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   padding: 2rem 0;
 }
 
-.documento-1-section .progress-wrapper .progress-step {
+.progress-wrapper .progress-step {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
 
-.documento-1-section .progress-wrapper .progress-step p {
+.progress-wrapper .progress-step p {
   font-size: 8px;
 }
 
-.documento-1-section .progress-wrapper .progress-step span {
+.progress-wrapper .progress-step span {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 24px;
   height: 24px;
-  background-color: #ce0000;
+  background-color: #aaaaaa;
   color: white;
   font-weight: 400;
   font-size: 12px;
@@ -524,6 +536,72 @@ nav .single-field p {
 
 .documento-1-section form {
   width: 90%;
+  max-width: 650px;
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 3rem;
+}
+
+.documento-1-section form label {
+  width: 90%;
+}
+
+.documento-1-section form label select {
+  width: 100%;
+  font-weight: 700;
+  padding: 0.375rem 0.75rem;
+  border-radius: 1rem;
+}
+
+.documento-1-section form label select:focus {
+  color: #e1251b;
+  border-color: #e1251b;
+}
+
+.drag-container {
+  width: 80%;
+  max-width: 580px;
+  margin: 3rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px dashed #aaaaaa;
+}
+
+.drag-container .drag-wrapper {
+  width: 40%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.drag-container .drag-wrapper figure {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #aaaaaa;
+  border-radius: 1rem;
+}
+
+.drag-container .drag-wrapper figure img {
+  width: 60%;
+  height: auto;
+}
+
+.drag-container .drag-wrapper p {
+  width: 80px;
+  font-weight: 700;
+}
+
+.documento-2-section form {
+  width: 90%;
   margin: auto;
   display: flex;
   flex-flow: column wrap;
@@ -531,11 +609,11 @@ nav .single-field p {
   align-items: center;
 }
 
-.documento-1-section form div {
+.documento-2-section form div {
   width: 100%;
 }
 
-.documento-1-section form div label {
+.documento-2-section form div label {
   width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
