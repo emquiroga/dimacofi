@@ -1,0 +1,29 @@
+.documento-1-section {
+  .progress-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+    .progress-step {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-size: 8px;
+      }
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        background-color: $redButton;
+        color: white;
+        font-weight: 400;
+        font-size: 12px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
