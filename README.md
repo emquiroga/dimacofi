@@ -1,1 +1,2 @@
 -Navbar estilo burger en large también
+-Sección compra con elementos, colores activos vía JS

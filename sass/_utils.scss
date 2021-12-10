@@ -54,3 +54,14 @@
   display: block;
   background-color: black;
 }
+.divider-small {
+  width: 90%;
+  max-width: 300px;
+  height: 1px;
+  margin: auto;
+  display: block;
+  background-color: $darkGray;
+  @media screen and (min-width: $tablet) {
+    margin: auto 0 auto 3rem;
+  }
+}

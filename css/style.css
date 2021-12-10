@@ -92,6 +92,21 @@ h4 {
   background-color: black;
 }
 
+.divider-small {
+  width: 90%;
+  max-width: 300px;
+  height: 1px;
+  margin: auto;
+  display: block;
+  background-color: #aaaaaa;
+}
+
+@media screen and (min-width: 48em) {
+  .divider-small {
+    margin: auto 0 auto 3rem;
+  }
+}
+
 .register-section {
   width: 100%;
   height: 100%;
@@ -334,6 +349,27 @@ nav .container-fluid button span:not(:last-child) {
 nav .profile-div {
   color: white;
   padding: 1rem 2rem;
+}
+
+nav .single-field {
+  padding: 0.5rem 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 2.5rem;
+  font-size: clamp(14px, 2vw, 18px);
+  text-decoration: none;
+  color: #646a79;
+}
+
+nav .single-field img {
+  width: 24px;
+  height: 24px;
+}
+
+nav .single-field p {
+  margin: auto 0;
+  font-weight: 500;
 }
 
 .compra-section {

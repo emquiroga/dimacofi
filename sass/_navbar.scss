@@ -46,4 +46,22 @@ nav {
     color: white;
     padding: 1rem 2rem;
   }
+  .single-field {
+    padding: 0.5rem 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 2.5rem;
+    font-size: $fontSmall;
+    text-decoration: none;
+    color: $darkerGray;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    p {
+      margin: auto 0;
+      font-weight: 500;
+    }
+  }
 }
