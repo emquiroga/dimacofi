@@ -194,7 +194,7 @@ a {
   background-color: #fff;
   background-clip: padding-box;
   border: none;
-  border: 1px dotted #e1251b;
+  border: 2px dotted #aaaaaa;
   appearance: none;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -210,28 +210,31 @@ a {
   width: 90%;
   max-width: 350px;
   margin: 1rem auto;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   color: white;
   font-weight: 500;
   font-size: clamp(14px, 2vw, 18px);
   background-color: #ce0000;
-  border: none;
+  border: 1px inset #ce0000;
   border-radius: 1rem;
 }
 
 .white-button {
+  width: 90%;
+  max-width: 350px;
   margin: 1rem auto;
-  padding: 0.375rem 0.75rem;
+  padding: 0.5rem;
   color: black;
   font-weight: 500;
+  font-size: clamp(14px, 2vw, 18px);
   background-color: white;
-  border: 2px solid black;
+  border: 1px inset black;
   border-radius: 1rem;
 }
 
 .control-button {
-  width: 2rem;
-  height: 2rem;
+  width: 28px;
+  height: 28px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -244,12 +247,45 @@ a {
   border-radius: 50%;
 }
 
+.firmantes-button {
+  margin: 1rem auto;
+  padding: 0.5rem;
+  color: black;
+  font-weight: 500;
+  font-size: clamp(14px, 2vw, 18px);
+  background-color: white;
+  border: 1px inset black;
+  border-radius: 1rem;
+}
+
 @media screen and (min-width: 48em) {
   .small-button {
     margin: 1rem 0 !important;
     max-width: 200px !important;
     margin-left: auto !important;
   }
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+@media screen and (min-width: 48em) {
+  .buttons-wrapper {
+    gap: 2rem;
+    place-self: end;
+  }
+}
+
+.firmante-buttons-wrapper {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 1px;
 }
 
 .register-section {
@@ -670,7 +706,8 @@ nav .single-field p {
 }
 
 .drag-container .drag-wrapper p {
-  width: 80px;
+  max-width: 100px;
+  text-align: center;
   font-weight: 700;
 }
 
@@ -699,28 +736,48 @@ nav .single-field p {
   }
 }
 
-.documento-2-section form .firmantes-wrapper {
-  margin: 1rem 0;
+.firmantes-wrapper {
+  margin: 2rem 0;
 }
 
-.documento-2-section form .buttons-wrapper {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media screen and (min-width: 48em) {
-  .documento-2-section form .buttons-wrapper {
-    gap: 2rem;
-    place-self: end;
+@media screen and (min-width: 64em) {
+  .documento-3-section .col-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .documento-3-section .col-container .col-left,
+  .documento-3-section .col-container .col-right {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
   }
 }
 
-.documento-3-section .preview {
+.documento-3-section .col-container .col-left .preview {
   width: 90%;
   height: 500px;
   margin: auto;
+  display: flex;
+  position: relative;
   background-color: #aaaaaa;
+}
+
+.documento-3-section .col-container .col-left .preview .preview-info {
+  padding: 0.5rem 1.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 0.5rem;
+  color: white;
+  border-radius: 1rem;
+}
+
+.documento-3-section form h1 {
+  margin: 1rem 0;
+}
+
+.documento-3-section form div label {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

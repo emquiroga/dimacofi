@@ -1,8 +1,48 @@
 .documento-3-section {
-  .preview {
-    width: 90%;
-    height: 500px;
-    margin: auto;
-    background-color: $darkGray;
+  @media screen and (min-width: $large) {
+    .col-container {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      flex-flow: row wrap;
+
+      .col-left,
+      .col-right {
+        width: 50%;
+        display: flex;
+        flex-flow: column;
+      }
+    }
+  }
+  .col-container {
+    .col-left {
+      .preview {
+        width: 90%;
+        height: 500px;
+        margin: auto;
+        display: flex;
+        position: relative;
+        background-color: $darkGray;
+
+        .preview-info {
+          padding: 0.5rem 1.5rem;
+          position: absolute;
+          top: 1rem;
+          left: 0.5rem;
+          color: white;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+  form {
+    h1 {
+      margin: 1rem 0;
+    }
+    div {
+      label {
+        width: 100%;
+      }
+    }
   }
 }

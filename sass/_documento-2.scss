@@ -28,19 +28,8 @@
         }
       }
     }
-    .firmantes-wrapper {
-      margin: 1rem 0;
-    }
-    .buttons-wrapper {
-      display: flex;
-      flex-flow: row;
-      justify-content: space-between;
-      align-items: center;
-
-      @media screen and (min-width: $tablet) {
-        gap: 2rem;
-        place-self: end;
-      }
-    }
   }
+}
+.firmantes-wrapper {
+  margin: 2rem 0;
 }
