@@ -42,116 +42,238 @@
           <div class="profile-div red-bg white-text mt-3" role="alert">
             PERFIL
           </div>
-          <ul class="navbar-nav me-auto mb-2 mt-3 mb-lg-0">
-            <li class="nav-item mt-3 mb-3">
-              <h6>DATOS PERSONALES</h6>
-              <a href="#" class="single-field">
-                <img src="../assets/SVG/editar.svg" alt="" />
-                <p>Editar datos</p>
-              </a>
-              <a href="#" class="single-field">
-                <img src="../assets/SVG/password.svg" alt="" />
-                <p>Modificar contraseña</p>
-              </a>
-            </li>
-            <div class="divider-small"></div>
-            <li class="nav-item mt-3 mb-3">
-              <h6>COMPRAS</h6>
-              <a href="#" class="single-field">
-                <img src="../assets/SVG/carrito.svg" alt="" />
-                <p>Comprar firmas</p>
-              </a>
-              <a href="#" class="single-field">
-                <img src="../assets/SVG/facturas.svg" alt="" />
-                <p>Facturas</p>
-              </a>
-            </li>
-            <div class="divider-small"></div>
-            <li class="nav-item mt-3 mb-3">
-              <h6>NOTIFICACIONES</h6>
-              <a href="#" class="single-field">
-                <img src="../assets/SVG/mensajes.svg" alt="" />
-                <p>Mensajes</p>
-              </a>
-            </li>
-            <div class="divider-small"></div>
-            <li class="nav-item mt-3 mb-3">
-              <h6>MIS DOCUMENTOS</h6>
-              <a href="#" class="single-field">
-                <img src="../assets/SVG/estado.svg" alt="" />
-                <p>Estado de envíos</p>
-              </a>
-            </li>
-            <div class="divider-small"></div>
-            <li class="nav-item mt-3 mb-3">
-              <a href="#" class="single-field">
-                <img src="../assets/SVG/logout.svg" alt="" />
-                <p class="red-text">Cerrar Sesión</p>
-              </a>
-            </li>
-          </ul>
+          <div class="menu-container">
+            <ul class="navbar-nav mb-2 mt-3 mb-lg-3">
+              <li class="nav-item mt-3 mb-3">
+                <h6>DATOS PERSONALES</h6>
+                <a href="#" class="single-field">
+                  <img src="../assets/SVG/editar.svg" alt="" />
+                  <p>Editar datos</p>
+                </a>
+                <a href="#" class="single-field">
+                  <img src="../assets/SVG/password.svg" alt="" />
+                  <p>Modificar contraseña</p>
+                </a>
+              </li>
+              <div class="divider-small"></div>
+              <li class="nav-item mt-3 mb-3">
+                <h6>COMPRAS</h6>
+                <a href="#" class="single-field">
+                  <img src="../assets/SVG/carrito.svg" alt="" />
+                  <p>Comprar firmas</p>
+                </a>
+                <a href="#" class="single-field">
+                  <img src="../assets/SVG/facturas.svg" alt="" />
+                  <p>Facturas</p>
+                </a>
+              </li>
+              <div class="divider-small"></div>
+              <li class="nav-item mt-3 mb-3">
+                <h6>NOTIFICACIONES</h6>
+                <a href="#" class="single-field">
+                  <img src="../assets/SVG/mensajes.svg" alt="" />
+                  <p>Mensajes</p>
+                </a>
+              </li>
+              <div class="divider-small"></div>
+              <li class="nav-item mt-3 mb-3">
+                <h6>MIS DOCUMENTOS</h6>
+                <a href="#" class="single-field">
+                  <img src="../assets/SVG/estado.svg" alt="" />
+                  <p>Estado de envíos</p>
+                </a>
+              </li>
+              <div class="divider-small"></div>
+              <li class="nav-item mt-3 mb-3">
+                <a href="#" class="single-field">
+                  <img src="../assets/SVG/logout.svg" alt="" />
+                  <p class="red-text">Cerrar Sesión</p>
+                </a>
+              </li>
+              <div class="divider-small"></div>
+            </ul>
+            <img src="../assets/logo/contratos.png" alt="Logo" class="logo" />
+          </div>
         </div>
       </div>
     </nav>
     <section class="documento-2-section">
-      <div class="container">
-        <div class="progress-wrapper">
-          <div class="progress-step">
-            <p>Seleccionar documento</p>
-            <span>01</span>
-          </div>
-          <div class="progress-step">
-            <p>Añadir firmantes</p>
-            <span>02</span>
-          </div>
-          <div class="progress-step">
-            <p>Insertar campos</p>
-            <span>03</span>
-          </div>
-          <div class="progress-step">
-            <p>Revisar y Enviar</p>
-            <span>04</span>
-          </div>
+      <div class="progress-wrapper">
+        <div class="progress-step">
+          <p>Seleccionar documento</p>
+          <span class="red-bg">01</span>
         </div>
-        <h1>Llenar los campos</h1>
-        <h4>Añadir firmantes al documento</h4>
+        <div class="progress-step">
+          <p>Añadir firmantes</p>
+          <span class="red-bg">02</span>
+        </div>
+        <div class="progress-step">
+          <p>Insertar campos</p>
+          <span>03</span>
+        </div>
+        <div class="progress-step">
+          <p>Revisar y Enviar</p>
+          <span>04</span>
+        </div>
+      </div>
+      <div class="form-container">
         <form action="">
+          <h1>Llenar los campos</h1>
+          <p>Añadir firmantes al documento</p>
           <h2 class="red-text mt-3 mb-3">Llena los campos de los firmantes</h2>
-          <div class="mb-3">
-            <label for="">
-              <input
-                class="dotted-input"
-                type="text"
-                name=""
-                id=""
-                value="Firmante 1"
-                placeholder="Añadir firmante"
-              />
-            </label>
+          <div class="firmantes-container">
+            <div class="firmantes-wrapper">
+              <div class="mb-3">
+                <label for="">
+                  <input
+                    class="dotted-input"
+                    type="text"
+                    name=""
+                    id=""
+                    value="Firmante 1"
+                    placeholder="Añadir firmante"
+                  />
+                </label>
+              </div>
+              <div class="mb-3">
+                <label for="">
+                  <input
+                    class="dotted-input red-text"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="+ Añadir Nombre y Apellido"
+                  />
+                </label>
+              </div>
+              <div class="mb-3">
+                <label for="">
+                  <input
+                    class="dotted-input"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="+ Email"
+                  />
+                </label>
+              </div>
+            </div>
+            <div class="firmantes-wrapper">
+              <div class="mb-3">
+                <label for="">
+                  <input
+                    class="dotted-input"
+                    type="text"
+                    name=""
+                    id=""
+                    value="Firmante 2"
+                    placeholder="Añadir firmante"
+                  />
+                </label>
+              </div>
+              <div class="mb-3">
+                <label for="">
+                  <input
+                    class="dotted-input red-text"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="+ Añadir Nombre y Apellido"
+                  />
+                </label>
+              </div>
+              <div class="mb-3">
+                <label for="">
+                  <input
+                    class="dotted-input"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="+ Email"
+                  />
+                </label>
+              </div>
+            </div>
+            <div class="firmantes-wrapper">
+              <div class="mb-3">
+                <label for="">
+                  <input
+                    class="dotted-input"
+                    type="text"
+                    name=""
+                    id=""
+                    value="Firmante 3"
+                    placeholder="Añadir firmante"
+                  />
+                </label>
+              </div>
+              <div class="mb-3">
+                <label for="">
+                  <input
+                    class="dotted-input red-text"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="+ Añadir Nombre y Apellido"
+                  />
+                </label>
+              </div>
+              <div class="mb-3">
+                <label for="">
+                  <input
+                    class="dotted-input"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="+ Email"
+                  />
+                </label>
+              </div>
+            </div>
+            <div class="firmantes-wrapper">
+              <div class="mb-3">
+                <label for="">
+                  <input
+                    class="dotted-input"
+                    type="text"
+                    name=""
+                    id=""
+                    value="Firmante 4"
+                    placeholder="Añadir firmante"
+                  />
+                </label>
+              </div>
+              <div class="mb-3">
+                <label for="">
+                  <input
+                    class="dotted-input red-text"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="+ Añadir Nombre y Apellido"
+                  />
+                </label>
+              </div>
+              <div class="mb-3">
+                <label for="">
+                  <input
+                    class="dotted-input"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="+ Email"
+                  />
+                </label>
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="">
-              <input
-                class="dotted-input red-text"
-                type="text"
-                name=""
-                id=""
-                placeholder="+ Añadir Nombre y Apellido"
-              />
-            </label>
+          <div class="buttons-wrapper">
+            <span class="control-button">-</span>
+            <button class="white-button">Firmante</button>
+            <span class="control-button">+</span>
+            <button class="white-button">Guardar Datos</button>
           </div>
-          <div class="mb-3">
-            <label for="">
-              <input
-                class="dotted-input"
-                type="text"
-                name=""
-                id=""
-                placeholder="+ Email"
-              />
-            </label>
-          </div>
-          <button class="red-button mt-3">Siguiente</button>
+          <button class="red-button mt-3 small-button">Siguiente</button>
         </form>
       </div>
     </section>

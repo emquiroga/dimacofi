@@ -24,13 +24,20 @@
     flex-flow: column wrap;
     font-size: $fontMedium;
 
+    .left {
+      h3 {
+        @media screen and (min-width: $large) {
+          font-size: $fontLarge;
+        }
+      }
+    }
+
     .right {
       display: flex;
       flex-flow: column;
       justify-content: center;
 
       a {
-        text-decoration: none;
         color: white;
       }
     }
@@ -59,12 +66,22 @@
       font-size: $fontMedium;
     }
 
+    h4 {
+      @media screen and (min-width: $tablet) {
+        font-size: $fontLarge;
+      }
+      @media screen and (min-width: $large) {
+        font-size: $fontXL;
+      }
+    }
+
     .documentos-container {
       width: 100%;
       max-width: 1000px;
 
       p {
         text-align: center;
+        margin-bottom: 2rem;
       }
 
       .docs-wrapper {
@@ -84,8 +101,8 @@
           font-weight: 700;
 
           figure {
+            width: 100%;
             img {
-              width: 100%;
               border: 2px solid $disabled;
               border-radius: 1rem;
             }

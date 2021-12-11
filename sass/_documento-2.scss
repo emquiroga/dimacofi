@@ -1,16 +1,45 @@
 .documento-2-section {
   form {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-
     div {
-      width: 100%;
       label {
         width: 100%;
+      }
+    }
+    .firmantes-container {
+      @media screen and (min-width: $tablet) {
+        height: 500px;
+        display: flex;
+        flex-flow: column;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+          width: 12px;
+        }
+        &::-webkit-scrollbar-track {
+          -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          border-radius: 10px;
+          cursor: pointer;
+        }
+        &::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          -webkit-box-shadow: inset 0 0 $redFont;
+          box-shadow: inset 0 0 6px $redFont;
+        }
+      }
+    }
+    .firmantes-wrapper {
+      margin: 1rem 0;
+    }
+    .buttons-wrapper {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+
+      @media screen and (min-width: $tablet) {
+        gap: 2rem;
+        place-self: end;
       }
     }
   }
