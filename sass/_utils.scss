@@ -22,7 +22,7 @@
   background-color: $lightGray !important;
 }
 .red-bg {
-  background-color: $redButton !important;
+  background-color: $redFont !important;
 }
 //Layout components
 .divider {
@@ -32,17 +32,17 @@
   margin: auto;
   display: block;
   background-color: black;
+  @media screen and (min-width: $tablet) {
+    height: 2px;
+  }
 }
 .divider-small {
   width: 90%;
   max-width: 300px;
   height: 1px;
-  margin: auto;
+  margin: 1rem auto;
   display: block;
   background-color: $darkGray;
-  @media screen and (min-width: $tablet) {
-    margin: auto 0 auto 3rem;
-  }
 }
 .dotted-divider {
   width: 1px;

@@ -44,11 +44,30 @@ nav {
   }
   .profile-div {
     color: white;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
+    font-size: $fontMedium;
+    font-weight: 700;
   }
   .menu-container {
     max-width: 400px;
     margin-left: auto;
+    display: flex;
+    flex-flow: column;
+    color: $darkerGray;
+    font-size: $fontMedium;
+
+    ul {
+      li {
+        h6 {
+          margin: 1rem 2rem;
+          font-weight: 700;
+        }
+      }
+    }
+    .logo {
+      margin: 5rem 0 3rem 0;
+      place-self: center;
+    }
   }
   .single-field {
     padding: 0.5rem 2rem;
@@ -59,6 +78,7 @@ nav {
     font-size: $fontSmall;
     text-decoration: none;
     color: $darkerGray;
+
     img {
       width: 24px;
       height: 24px;

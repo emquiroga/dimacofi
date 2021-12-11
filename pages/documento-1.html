@@ -45,7 +45,7 @@
             PERFIL
           </div>
           <div class="menu-container">
-            <ul class="navbar-nav me-auto mb-2 mt-3 mb-lg-3">
+            <ul class="navbar-nav mb-2 mt-3 mb-lg-3">
               <li class="nav-item mt-3 mb-3">
                 <h6>DATOS PERSONALES</h6>
                 <a href="#" class="single-field">
@@ -94,40 +94,45 @@
               </li>
               <div class="divider-small"></div>
             </ul>
+            <img src="../assets/logo/contratos.png" alt="Logo" class="logo" />
           </div>
         </div>
       </div>
     </nav>
     <section class="documento-1-section">
-      <div class="container">
-        <div class="progress-wrapper">
-          <div class="progress-step">
-            <p>Seleccionar documento</p>
-            <span class="red-bg">01</span>
-          </div>
-          <div class="progress-step">
-            <p>Añadir firmantes</p>
-            <span>02</span>
-          </div>
-          <div class="progress-step">
-            <p>Insertar campos</p>
-            <span>03</span>
-          </div>
-          <div class="progress-step">
-            <p>Revisar y Enviar</p>
-            <span>04</span>
-          </div>
+      <div class="progress-wrapper">
+        <div class="progress-step">
+          <p>Seleccionar documento</p>
+          <span class="red-bg">01</span>
         </div>
-        <h1>Documento Único</h1>
-        <p>Seleccione el tipo de documento</p>
+        <div class="progress-step">
+          <p>Añadir firmantes</p>
+          <span>02</span>
+        </div>
+        <div class="progress-step">
+          <p>Insertar campos</p>
+          <span>03</span>
+        </div>
+        <div class="progress-step">
+          <p>Revisar y Enviar</p>
+          <span>04</span>
+        </div>
+      </div>
+      <div class="form-container">
         <form action="">
-          <div class="mb-3">
-            <label for="">
-              <select name="" id="">
-                <option value="locacion">Locación de servicios</option>
-              </select>
-            </label>
-          </div>
+          <h1>Documento Único</h1>
+          <p>Seleccione el tipo de documento</p>
+          <label for="">
+            <select name="" id="">
+              <option value="locacion" selected aria-selected="locacion">
+                Locación de servicios
+              </option>
+              <option>Servicio 2</option>
+              <option>Servicio 3</option>
+              <option>Servicio 4</option>
+              <option>Servicio 5</option>
+            </select>
+          </label>
           <h1 class="mt-3">Sube tu documento</h1>
           <div class="drag-container mt-3">
             <div class="drag-wrapper">
@@ -139,7 +144,6 @@
               </figure>
               <p>Adjuntar documento</p>
             </div>
-            <div class="dotted-divider"></div>
             <div class="drag-wrapper">
               <figure>
                 <img src="../assets/SVG/añadir.svg" alt="Adjuntar Documento" />
@@ -147,7 +151,7 @@
               <p>Arrastrar aquí</p>
             </div>
           </div>
-          <button class="red-button mt-3">Siguiente</button>
+          <button class="red-button mt-3 small-button">Siguiente</button>
         </form>
       </div>
     </section>
