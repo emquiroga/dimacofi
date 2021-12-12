@@ -1,46 +1,31 @@
 .compra-section {
-  width: 100%;
-  min-height: 600px;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  form {
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
+  .compra-wrapper {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     @media screen and (min-width: $large) {
-      flex-flow: row wrap;
-      justify-content: space-around;
-      align-items: center;
+      margin-top: 10rem;
     }
-
-    .compra-wrapper {
+    .cantidad-wrapper {
       display: flex;
-      flex-flow: column wrap;
+      flex-flow: row wrap;
       justify-content: center;
       align-items: center;
-      .cantidad-wrapper {
-        display: flex;
-        flex-flow: row wrap;
-        gap: 1rem;
-        padding: 2rem 1rem;
-        font-size: $fontMedium;
-      }
-      .total-wrapper {
-        display: flex;
-        flex-flow: row wrap;
-        gap: 2rem;
-        font-weight: 700;
-      }
+      gap: 1rem;
+      padding: 2rem 1rem;
+      font-size: $fontMedium;
     }
-    .divider {
-      @media screen and (min-width: $large) {
-        display: none;
-      }
+    .total-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 2rem;
+      font-weight: 700;
+    }
+  }
+  .divider {
+    @media screen and (min-width: $large) {
+      display: none;
     }
   }
 }

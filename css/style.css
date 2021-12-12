@@ -137,6 +137,22 @@ a {
   }
 }
 
+.form-container .compra-form {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+@media screen and (min-width: 64em) {
+  .form-container .compra-form {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+}
+
 .register-input {
   display: block;
   width: 100%;
@@ -163,7 +179,7 @@ a {
 .compra-input {
   display: block;
   width: 50px;
-  padding: 0.5rem 1rem;
+  padding: 0.375rem 1.5rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -174,6 +190,12 @@ a {
   border-radius: 1rem;
   appearance: none;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media screen and (min-width: 64em) {
+  .compra-input {
+    width: 90px;
+  }
 }
 
 .compra-input:focus {
@@ -261,7 +283,8 @@ a {
 @media screen and (min-width: 48em) {
   .small-button {
     margin: 1rem 0 !important;
-    max-width: 200px !important;
+    padding: 0.5rem 2rem !important;
+    max-width: 250px !important;
     margin-left: auto !important;
   }
 }
@@ -455,6 +478,10 @@ a {
   border-radius: 1rem;
 }
 
+.inicio-section .documentos .documentos-container .docs-wrapper .singledoc figure figcaption {
+  margin-top: 2rem;
+}
+
 nav {
   padding: 1rem 0;
 }
@@ -554,18 +581,7 @@ nav .single-field p {
   font-weight: 500;
 }
 
-.compra-section {
-  width: 100%;
-  min-height: 600px;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
-
-.compra-section form {
-  width: 90%;
-  max-width: 900px;
-  margin: auto;
+.compra-section .compra-wrapper {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -573,29 +589,22 @@ nav .single-field p {
 }
 
 @media screen and (min-width: 64em) {
-  .compra-section form {
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
+  .compra-section .compra-wrapper {
+    margin-top: 10rem;
   }
 }
 
-.compra-section form .compra-wrapper {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.compra-section form .compra-wrapper .cantidad-wrapper {
+.compra-section .compra-wrapper .cantidad-wrapper {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   padding: 2rem 1rem;
   font-size: clamp(18px, 2vw, 24px);
 }
 
-.compra-section form .compra-wrapper .total-wrapper {
+.compra-section .compra-wrapper .total-wrapper {
   display: flex;
   flex-flow: row wrap;
   gap: 2rem;
@@ -603,12 +612,13 @@ nav .single-field p {
 }
 
 @media screen and (min-width: 64em) {
-  .compra-section form .divider {
+  .compra-section .divider {
     display: none;
   }
 }
 
 .progress-wrapper {
+  width: 95%;
   max-width: 700px;
   margin: auto;
   display: flex;
@@ -618,14 +628,64 @@ nav .single-field p {
 }
 
 .progress-wrapper .progress-step {
+  width: calc(100% / 4 - 1rem);
+  position: relative;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
 
+.progress-wrapper .progress-step.step-completed::before {
+  border-bottom: 4px solid #ce0000 !important;
+  z-index: 2;
+}
+
+.progress-wrapper .progress-step.step-completed::after {
+  border-bottom: 4px solid #ce0000 !important;
+  z-index: 2;
+}
+
+.progress-wrapper .progress-step.step-completed span {
+  background-color: #ce0000 !important;
+}
+
+.progress-wrapper .progress-step::before {
+  position: absolute;
+  content: "";
+  border-bottom: 4px solid #aaaaaa;
+  width: 100%;
+  top: 40px;
+  left: -50%;
+  z-index: 1;
+}
+
+.progress-wrapper .progress-step::after {
+  position: absolute;
+  content: "";
+  border-bottom: 4px solid #aaaaaa;
+  width: 100%;
+  top: 40px;
+  left: 50%;
+  z-index: 1;
+}
+
+.progress-wrapper .progress-step:first-child::before {
+  content: none;
+}
+
+.progress-wrapper .progress-step:last-child::after {
+  content: none;
+}
+
 .progress-wrapper .progress-step p {
   font-size: 8px;
+}
+
+@media screen and (min-width: 48em) {
+  .progress-wrapper .progress-step p {
+    font-size: 10px;
+  }
 }
 
 .progress-wrapper .progress-step span {
@@ -639,19 +699,30 @@ nav .single-field p {
   font-weight: 400;
   font-size: 12px;
   border-radius: 50%;
+  z-index: 3;
 }
 
-.documento-1-section form label {
+.documento-1-section .form-container form {
+  gap: 1rem;
+}
+
+@media screen and (min-width: 48em) {
+  .documento-1-section .form-container form {
+    gap: 2rem;
+  }
+}
+
+.documento-1-section .form-container form label {
   width: 90%;
 }
 
 @media screen and (min-width: 48em) {
-  .documento-1-section form label {
+  .documento-1-section .form-container form label {
     margin: auto;
   }
 }
 
-.documento-1-section form label select {
+.documento-1-section .form-container form label select {
   width: 100%;
   max-width: 600px;
   padding: 0.375rem 0.75rem;
@@ -663,7 +734,7 @@ nav .single-field p {
   cursor: pointer;
 }
 
-.documento-1-section form label select:focus {
+.documento-1-section .form-container form label select:focus {
   border-color: #e1251b;
 }
 
@@ -711,8 +782,26 @@ nav .single-field p {
   font-weight: 700;
 }
 
+.documento-2-section form {
+  gap: 0.5rem;
+}
+
+.documento-2-section form p {
+  font-size: clamp(18px, 2vw, 24px);
+}
+
 .documento-2-section form div label {
   width: 100%;
+}
+
+.documento-2-section form h4 {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 64em) {
+  .documento-2-section form h1 {
+    font-size: clamp(24px, 2vw, 30px);
+  }
 }
 
 @media screen and (min-width: 48em) {
