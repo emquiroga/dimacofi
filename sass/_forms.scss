@@ -19,4 +19,17 @@
       padding: 5rem;
     }
   }
+  .compra-form {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+
+    @media screen and (min-width: $large) {
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: stretch;
+    }
+  }
 }

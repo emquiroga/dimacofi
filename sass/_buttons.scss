@@ -49,7 +49,8 @@
 .small-button {
   @media screen and (min-width: $tablet) {
     margin: 1rem 0 !important;
-    max-width: 200px !important;
+    padding: 0.5rem 2rem !important;
+    max-width: 250px !important;
     margin-left: auto !important;
   }
 }

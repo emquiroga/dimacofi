@@ -1,17 +1,65 @@
 .progress-wrapper {
+  width: 95%;
   max-width: 700px;
   margin: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   padding: 2rem 0;
+
   .progress-step {
+    width: calc(100% / 4 - 1rem);
+    position: relative;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+
+    &.step-completed {
+      &::before {
+        border-bottom: 4px solid $redButton !important;
+        z-index: 2;
+      }
+      &::after {
+        border-bottom: 4px solid $redButton !important;
+        z-index: 2;
+      }
+      span {
+        background-color: $redButton !important;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      border-bottom: 4px solid $darkGray;
+      width: 100%;
+      top: 40px;
+      left: -50%;
+      z-index: 1;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      border-bottom: 4px solid $darkGray;
+      width: 100%;
+      top: 40px;
+      left: 50%;
+      z-index: 1;
+    }
+
+    &:first-child::before {
+      content: none;
+    }
+    &:last-child::after {
+      content: none;
+    }
+
     p {
       font-size: 8px;
+      @media screen and (min-width: $tablet) {
+        font-size: 10px;
+      }
     }
     span {
       display: flex;
@@ -24,6 +72,7 @@
       font-weight: 400;
       font-size: 12px;
       border-radius: 50%;
+      z-index: 3;
     }
   }
 }
